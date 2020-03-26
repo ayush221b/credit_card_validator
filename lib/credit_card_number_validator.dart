@@ -1,4 +1,4 @@
-library credit_card_validator;
+library credit_card_number_validator;
 
 import 'package:flutter/foundation.dart';
 
