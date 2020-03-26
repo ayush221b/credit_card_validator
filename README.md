@@ -16,7 +16,7 @@ Using this package you can easily validate a credit card number, and identify th
 
 Add the following line to your dependencies:
 ```
-credit_card_validate: 0.0.1
+credit_card_validate: 0.0.2
 ```
 and run `flutter packages get`
 
