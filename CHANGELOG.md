@@ -1,3 +1,7 @@
+## [0.0.3] - 26.03.2020
+
+1. Added sanity checks for input data
+
 ## [0.0.2] - 26.03.2020
 
 1. Added the credit card number validation logic.

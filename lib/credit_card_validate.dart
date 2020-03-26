@@ -17,7 +17,26 @@ class CreditCardValidator {
   static bool isCreditCardValid({@required String cardNumber}) {
     bool isValid = false;
 
+    /// Trim the input
+    cardNumber = cardNumber.trim();
+
+    /// Replace all spaces
+    cardNumber = cardNumber.replaceAll(' ', '');
+
+    print(cardNumber.length );
+
+    /// Check if the credit card number contains any characters other
+    /// than numbers
+    int nonNumerals = 0;
+    for (int i = 0; i < cardNumber.length; i++) {
+      if (int.tryParse(cardNumber[i]) == null) {
+        nonNumerals++;
+        break;
+      }
+    }
+
     if (cardNumber != null &&
+        nonNumerals == 0 &&
         cardNumber.length >= 13 &&
         cardNumber.length <= 19) {
       if (identifyCardBrand(cardNumber) != null) {
