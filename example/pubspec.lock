@@ -50,7 +50,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  credit_card_number_validator:
+  credit_card_validate:
     dependency: "direct main"
     description:
       path: ".."

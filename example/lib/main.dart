@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:credit_card_number_validator/credit_card_number_validator.dart';
+import 'package:credit_card_validate/credit_card_validate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {

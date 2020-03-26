@@ -1,4 +1,4 @@
-name: credit_card_number_validator
+name: credit_card_validate
 description: Easily validate credit card numbers using the Luhn Algorithm. Also identify the brand of the credit card.
 version: 0.0.1
 homepage: https://creditcardvalidator.netlify.com/

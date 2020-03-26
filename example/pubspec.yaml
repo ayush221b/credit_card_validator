@@ -29,7 +29,7 @@ dependencies:
   font_awesome_flutter: ^8.7.0
 
   # Credit card validator package
-  credit_card_number_validator:
+  credit_card_validate:
     path: ../
 
 dev_dependencies:

@@ -1,4 +1,4 @@
-# credit_card_number_validator
+# credit_card_validate
 
 *Demo* : https://creditcardvalidator.netlify.com/
 
@@ -16,7 +16,7 @@ Using this package you can easily validate a credit card number, and identify th
 
 Add the following line to your dependencies:
 ```
-credit_card_number_validator: 0.0.1
+credit_card_validate: 0.0.1
 ```
 and run `flutter packages get`
 
@@ -25,7 +25,7 @@ and run `flutter packages get`
 Import the package wherever you want to use it.
 
 ```
-import 'package:credit_card_number_validator/credit_card_number_validator.dart';
+import 'package:credit_card_validate/credit_card_validate.dart';
 ```
 
 ## Example
@@ -45,12 +45,12 @@ bool isValid = CreditCardValidator.isCreditCardValid(cardNumber: '47160730822972
 String brand = CreditCardValidator.identifyCardBrand('4716073082297205');
 ```
 
-*For a fully functional example, please see the [example directory](https://github.com/ayush221b/credit_card_number_validator/tree/master/example)*
+*For a fully functional example, please see the [example directory](https://github.com/ayush221b/credit_card_validate/tree/master/example)*
 
 ### Demo
 
-![Credit Card Validator Demo](demo/credit_card_number_validator_demo.gif)
+![Credit Card Validator Demo](demo/credit_card_validate_demo.gif)
 
 ## Issues and Improvements
 
-Feel free to contribute at: https://github.com/ayush221b/credit_card_number_validator/issues
+Feel free to contribute at: https://github.com/ayush221b/credit_card_validate/issues
