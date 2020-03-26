@@ -49,7 +49,7 @@ String brand = CreditCardValidator.identifyCardBrand('4716073082297205');
 
 ### Demo
 
-![Credit Card Validator Demo](demo/credit_card_validate_demo.gif)
+![Credit Card Validator Demo](https://media.giphy.com/media/kaOIRw7U6sCbFvlrb8/giphy.gif)
 
 ## Issues and Improvements
 
