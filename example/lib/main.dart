@@ -69,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 decoration: InputDecoration(
+                  labelText: 'Start typing to validate...',
                     suffixIcon: brandIcon != null ? FaIcon(brandIcon, size: 32,) : null),
               ),
             ),
