@@ -1,7 +1,5 @@
 library credit_card_validate;
 
-import 'package:flutter/foundation.dart';
-
 /// The credit card number validation logic class
 /// This package uses the `Luhn Algorithm` (look it up, it's really cool)
 /// This validator supports the following credit cards:
@@ -14,7 +12,7 @@ class CreditCardValidator {
   /// `return_type`: [bool]
   /// The function returns [true] if the credit card number is valid
   /// and [false] if the credit card number is invalid.
-  static bool isCreditCardValid({@required String cardNumber}) {
+  static bool isCreditCardValid({required String cardNumber}) {
     bool isValid = false;
 
     /// Trim the input
@@ -23,7 +21,7 @@ class CreditCardValidator {
     /// Replace all spaces
     cardNumber = cardNumber.replaceAll(' ', '');
 
-    print(cardNumber.length );
+    ///print(cardNumber.length);
 
     /// Check if the credit card number contains any characters other
     /// than numbers
@@ -35,8 +33,7 @@ class CreditCardValidator {
       }
     }
 
-    if (cardNumber != null &&
-        nonNumerals == 0 &&
+    if (nonNumerals == 0 &&
         cardNumber.length >= 13 &&
         cardNumber.length <= 19) {
       if (identifyCardBrand(cardNumber) != null) {
@@ -99,6 +96,8 @@ class CreditCardValidator {
       brand = 'american_express';
     } else if (cardNumber.startsWith('6')) {
       brand = 'discover';
+    } else {
+      brand = 'other_card_brand';
     }
 
     return brand;
