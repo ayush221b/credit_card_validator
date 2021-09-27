@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String creditCardNumber = '';
-  IconData brandIcon;
+  IconData? brandIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -53,17 +53,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                   String brand = CreditCardValidator.identifyCardBrand(str);
                   IconData ccBrandIcon;
-                  if (brand != null) {
-                    if (brand == 'visa') {
-                      ccBrandIcon = FontAwesomeIcons.ccVisa;
-                    } else if (brand == 'master_card') {
-                      ccBrandIcon = FontAwesomeIcons.ccMastercard;
-                    } else if (brand == 'american_express') {
-                      ccBrandIcon = FontAwesomeIcons.ccAmex;
-                    } else if (brand == 'discover') {
-                      ccBrandIcon = FontAwesomeIcons.ccDiscover;
-                    }
+
+                  if (brand == 'visa') {
+                    ccBrandIcon = FontAwesomeIcons.ccVisa;
+                  } else if (brand == 'master_card') {
+                    ccBrandIcon = FontAwesomeIcons.ccMastercard;
+                  } else if (brand == 'american_express') {
+                    ccBrandIcon = FontAwesomeIcons.ccAmex;
+                  } else if (brand == 'discover') {
+                    ccBrandIcon = FontAwesomeIcons.ccDiscover;
+                  } else {
+                    ccBrandIcon = FontAwesomeIcons.question;
                   }
+
                   setState(() {
                     brandIcon = ccBrandIcon;
                   });
